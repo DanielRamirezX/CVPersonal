@@ -65,7 +65,7 @@
     if (!root.hasAttribute("data-theme")) updateThemeButton();
   });
 
-  // 3. Menú móvil -------------------------------------------------------------
+  // 3. Menú móvil ------------------------------------------------------------
   const header = document.querySelector(".site-header");
   const menuButton = document.querySelector(".nav-toggle");
   const menu = document.getElementById("menu-principal");
@@ -107,21 +107,25 @@
   // 5. Animaciones al entrar en pantalla --------------------------------------
   const revealItems = Array.from(document.querySelectorAll(".reveal"));
 
-  // Efecto escalonado: los hermanos aparecen uno detrás de otro
-  revealItems.forEach((item) => {
-    const siblings = Array.from(item.parentElement.children).filter((el) => el.classList.contains("reveal"));
-    const position = siblings.indexOf(item);
-    item.style.transitionDelay = `${Math.min(position * 90, 360)}ms`;
-  });
-
   if (prefersReducedMotion || !supportsObserver) {
     revealItems.forEach((item) => item.classList.add("is-visible"));
   } else {
+    // Efecto escalonado: los hermanos aparecen uno detrás de otro
+    revealItems.forEach((item) => {
+      const siblings = Array.from(item.parentElement.children).filter((el) => el.classList.contains("reveal"));
+      item.style.transitionDelay = `${Math.min(siblings.indexOf(item) * 90, 360)}ms`;
+    });
+
     const revealObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
+        const target = entry.target;
+        target.classList.add("is-visible");
+        // Al terminar la entrada quitamos el retraso, para que los efectos al pasar el ratón respondan al instante
+        target.addEventListener("transitionend", (event) => {
+          if (event.target === target) target.style.transitionDelay = "";
+        });
+        observer.unobserve(target);
       });
     }, { threshold: 0.15 });
 
