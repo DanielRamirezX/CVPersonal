@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nube Dorada · Café de especialidad en Villa Serena</title>
+  <meta name="description" content="Nube Dorada, tostaduría y cafetería de especialidad en Villa Serena. Consulta la carta, el horario y el equipo, y reserva mesa.">
+  <meta name="theme-color" content="#8a5420">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nube Dorada · Café de especialidad">
+  <meta property="og:description" content="Café tostado con calma en Villa Serena desde 2014.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238a5420'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' text-anchor='middle' fill='%23fbf7f2'%3EN%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- CABECERA -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Nube Dorada, volver al inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.5-7.97A6 6 0 0 1 18 9a4.5 4.5 0 0 1 0 9H7z"/></svg>
+        </span>
+        <span class="brand-name">Nube Dorada</span>
+      </a>
+
+      <nav class="nav" id="menu-principal" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#visita">Visítanos</a></li>
+          <li><a class="nav-cta" href="#contacto">Reservar</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Cambiar a tema oscuro">
+          <span aria-hidden="true">🌙</span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Café de especialidad · desde 2014</p>
+          <h1>Café tostado con calma, servido con cariño</h1>
+          <p class="lead">En Nube Dorada tostamos cada semana en pequeños lotes, con granos de productores que conocemos por su nombre. Siéntate, respira y dale tiempo a tu taza.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#carta">Ver la carta</a>
+            <a class="btn btn-ghost" href="#contacto">Reservar mesa</a>
+          </div>
+
+          <p class="status-pill" id="estado-ahora">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-text">Consulta nuestro horario</span>
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="cup">
+            <span class="steam steam-1"></span>
+            <span class="steam steam-2"></span>
+            <span class="steam steam-3"></span>
+            <div class="saucer"></div>
+            <div class="cup-handle"></div>
+            <div class="cup-body">
+              <div class="cup-coffee"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CIFRAS -->
+    <section class="stats" aria-label="Nube Dorada en cifras">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <span class="stat-number" data-count="38">38</span>
+          <span class="stat-label">orígenes de café distintos</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-number" data-count="12">12</span>
+          <span class="stat-label">años tostando en Villa Serena</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-number" data-count="4.8" data-decimals="1">4,8</span>
+          <span class="stat-label">valoración media de nuestros clientes</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-number" data-count="1800">1800</span>
+          <span class="stat-label">tazas servidas cada mes</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section" id="nosotros">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">Nosotros</p>
+          <h2>Una tostaduría de barrio con alma de viajera</h2>
+          <p>Nube Dorada nació en 2014 en un local pequeño de la calle de los Naranjos, con un tostador de segunda mano y una idea sencilla: un buen café no tiene por qué ser complicado.</p>
+          <p>Hoy seguimos tostando en pequeños lotes los martes y los jueves. Trabajamos con cooperativas de Colombia, Etiopía y Guatemala que nos envían muestras antes de cada cosecha.</p>
+          <a class="link-arrow" href="#equipo">Conoce al equipo →</a>
+        </div>
+
+        <ul class="values">
+          <li class="value reveal">
+            <span class="value-icon" aria-hidden="true">🌍</span>
+            <div>
+              <h3>Origen trazable</h3>
+              <p>Sabemos de qué finca llega cada saco y cuánto pagamos por kilo.</p>
+            </div>
+          </li>
+          <li class="value reveal">
+            <span class="value-icon" aria-hidden="true">🔥</span>
+            <div>
+              <h3>Tueste a fuego lento</h3>
+              <p>Tostamos despacio para que cada origen muestre su carácter.</p>
+            </div>
+          </li>
+          <li class="value reveal">
+            <span class="value-icon" aria-hidden="true">♻️</span>
+            <div>
+              <h3>Compromiso real</h3>
+              <p>Envases compostables y posos de café que acaban como abono en huertos de la zona.</p>
+            </div>
+          </li>
+          <li class="value reveal">
+            <span class="value-icon" aria-hidden="true">🤝</span>
+            <div>
+              <h3>Comunidad</h3>
+              <p>Catas y talleres de barismo los sábados por la mañana, abiertos a todo el mundo.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="section section-alt" id="carta">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Carta</p>
+          <h2>Lo que servimos cada día</h2>
+          <p>Precios en euros con IVA incluido. Pregúntanos por el café de especialidad de la semana.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar la carta por categoría">
+          <button class="filter" type="button" data-filter="todo" aria-pressed="true">Todo</button>
+          <button class="filter" type="button" data-filter="cafes" aria-pressed="false">Cafés</button>
+          <button class="filter" type="button" data-filter="frios" aria-pressed="false">Bebidas frías</button>
+          <button class="filter" type="button" data-filter="reposteria" aria-pressed="false">Repostería</button>
+          <button class="filter" type="button" data-filter="desayunos" aria-pressed="false">Desayunos</button>
+        </div>
+        <p class="sr-only" id="resultados-carta" aria-live="polite"></p>
+
+        <ul class="menu-grid">
+          <li class="menu-item" data-category="cafes">
+            <div>
+              <span class="badge">Popular</span>
+              <h3>Espresso de la casa</h3>
+              <p>Blend de Etiopía y Colombia con notas de chocolate negro y cítricos.</p>
+            </div>
+            <span class="menu-price">2,20&nbsp;€</span>
+          </li>
+          <li class="menu-item" data-category="cafes">
+            <div>
+              <h3>Cortado</h3>
+              <p>Espresso con un toque de leche texturizada, justo para suavizar la acidez.</p>
+            </div>
+            <span class="menu-price">2,50&nbsp;€</span>
+          </li>
+          <li class="menu-item" data-category="cafes">
+            <div>
+              <h3>V60 de origen</h3>
+              <p>Filtrado a mano. El origen cambia cada semana, pregunta por el de hoy.</p>
+            </div>
+            <span class="menu-price">3,80&nbsp;€</span>
+          </li>
+          <li class="menu-item" data-category="cafes">
+            <div>
+              <span class="badge">Nuevo</span>
+              <h3>Flat white de avena</h3>
+              <p>Doble ristretto con leche de avena para barista y microespuma sedosa.</p>
+            </div>
+            <span class="menu-price">3,60&nbsp;€</span>
+          </li>
+          <li class="menu-item" data-category="frios">
+            <div>
+              <span class="badge">Popular</span>
+              <h3>Cold brew de 18 horas</h3>
+              <p>Infusión en frío durante toda la noche, servida sobre hielo.</p>
+            </div>
+            <span class="menu-price">4,20&nbsp;€</span>
+          </li>
+          <li class="menu-item" data-category="frios">
+            <div>
+              <h3>Limonada de lavanda</h3>
+              <p>Limón recién exprimido, jarabe de lavanda y un toque de menta.</p>
+            </div>
+            <span class="menu-price">3,50&nbsp;€</span>
+          </li>
+          <li class="menu-item" data-category="reposteria">
+            <div>
+              <h3>Croissant de mantequilla</h3>
+              <p>Laminado a mano y horneado cada mañana por Sofía.</p>
+            </div>
+            <span class="menu-price">2,40&nbsp;€</span>
+          </li>
+          <li class="menu-item" data-category="reposteria">
+            <div>
+              <h3>Tarta de queso al horno</h3>
+              <p>Cremosa, con base de galleta de canela y un punto dorado perfecto.</p>
+            </div>
+            <span class="menu-price">4,50&nbsp;€</span>
+          </li>
+          <li class="menu-item" data-category="desayunos">
+            <div>
+              <h3>Tostada de aguacate</h3>
+              <p>Pan de masa madre, aguacate, huevo pochado y semillas tostadas.</p>
+            </div>
+            <span class="menu-price">7,90&nbsp;€</span>
+          </li>
+          <li class="menu-item" data-category="desayunos">
+            <div>
+              <h3>Bol de yogur y granola</h3>
+              <p>Yogur natural, granola casera de avena, miel y fruta de temporada.</p>
+            </div>
+            <span class="menu-price">5,80&nbsp;€</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="section" id="equipo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Equipo</p>
+          <h2>Las personas detrás de cada taza</h2>
+        </div>
+
+        <ul class="team-grid">
+          <li class="team-card reveal">
+            <div class="avatar" aria-hidden="true">LR</div>
+            <h3>Lucía Ramírez</h3>
+            <p class="role">Fundadora y tostadora jefe</p>
+            <p>Lleva más de 15 años tostando. Dice que el café se entiende antes de probarlo: por el olor.</p>
+          </li>
+          <li class="team-card reveal">
+            <div class="avatar avatar-green" aria-hidden="true">MO</div>
+            <h3>Mateo Ortega</h3>
+            <p class="role">Barista y formador</p>
+            <p>Forma a nuestro equipo y prepara cada cortado como si fuera el primero del día.</p>
+          </li>
+          <li class="team-card reveal">
+            <div class="avatar avatar-terracota" aria-hidden="true">SH</div>
+            <h3>Sofía Herrera</h3>
+            <p class="role">Repostería</p>
+            <p>Empieza a hornear a las 5:30. Su tarta de queso se agota casi todos los viernes.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- OPINIONES -->
+    <section class="section section-alt" id="opiniones">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Opiniones</p>
+          <h2>Lo que dicen quienes nos visitan</h2>
+        </div>
+
+        <div class="testimonials">
+          <figure class="testimonial reveal">
+            <blockquote>
+              <p>«El mejor cold brew de la ciudad. Vengo cada sábado con mi libro y no me muevo de la mesa.»</p>
+            </blockquote>
+            <figcaption>
+              <strong>Carmen M.</strong>
+              Cliente habitual
+              <span class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial reveal">
+            <blockquote>
+              <p>«El café de especialidad se nota en cada sorbo, y el equipo te explica cada origen sin hacerte sentir tonto.»</p>
+            </blockquote>
+            <figcaption>
+              <strong>Javier R.</strong>
+              Vecino del barrio
+              <span class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial reveal">
+            <blockquote>
+              <p>«Por fin una cafetería con opciones veganas de verdad. Y la tarta de queso es de otro mundo.»</p>
+            </blockquote>
+            <figcaption>
+              <strong>Ana P.</strong>
+              Cliente desde 2019
+              <span class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+            </figcaption>
+          </figure>
+
+          <figure class="testimonial reveal">
+            <blockquote>
+              <p>«Buen wifi, enchufes en todas las mesas y un ambiente tranquilo para teletrabajar. Mi oficina de los martes.»</p>
+            </blockquote>
+            <figcaption>
+              <strong>Miguel T.</strong>
+              Teletrabajador
+              <span class="stars" role="img" aria-label="4 de 5 estrellas">★★★★☆</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISÍTANOS -->
+    <section class="section" id="visita">
+      <div class="container visit-grid">
+        <div class="reveal">
+          <p class="eyebrow">Visítanos</p>
+          <h2>Un rincón con sol de tarde</h2>
+          <address class="address">
+            Calle de los Naranjos, 42<br>
+            Villa Serena
+          </address>
+          <p>A tres minutos andando de la estación de Naranjos (línea 2). Tenemos terraza cubierta y un patio interior lleno de plantas.</p>
+          <ul class="facts">
+            <li>📶 Wifi gratuito</li>
+            <li>🐶 Mascotas en la terraza</li>
+            <li>♿ Acceso adaptado</li>
+            <li>🌿 Opciones veganas y sin gluten</li>
+          </ul>
+        </div>
+
+        <div class="hours-card reveal">
+          <h3>Horario</h3>
+          <table class="hours">
+            <caption class="sr-only">Horario semanal de Nube Dorada</caption>
+            <tbody>
+              <tr data-days="1,2,3,4,5" data-open="08:00" data-close="20:00">
+                <th scope="row">Lunes a viernes</th>
+                <td>08:00 – 20:00</td>
+              </tr>
+              <tr data-days="6" data-open="09:00" data-close="21:00">
+                <th scope="row">Sábado</th>
+                <td>09:00 – 21:00</td>
+              </tr>
+              <tr data-days="0" data-open="10:00" data-close="15:00">
+                <th scope="row">Domingo</th>
+                <td>10:00 – 15:00</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="hours-note">La cocina cierra una hora antes que el local.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="section section-alt" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Dudas habituales</h2>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item reveal" open>
+            <summary>¿Se puede pagar con tarjeta y Bizum?</summary>
+            <p>Sí. Aceptamos tarjeta, Bizum, efectivo y pago con el móvil.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>¿Hay opciones sin lactosa o veganas?</summary>
+            <p>Sí. Ofrecemos leche de avena, almendra y soja sin lactosa, y repostería vegana cada día. La leche vegetal tiene un suplemento de 0,50 €.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>¿Se puede reservar mesa para un grupo?</summary>
+            <p>Claro. Para grupos de seis personas o más, reserva con 48 horas de antelación desde el formulario de contacto o por teléfono.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>¿Se vende café en grano?</summary>
+            <p>Sí, en bolsas de 250 g y 1 kg. Tostamos los martes y los jueves, así que siempre llega fresco. Podemos moler el café según tu cafetera.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>¿Hay catas o talleres?</summary>
+            <p>Los sábados a las 11:00 hacemos una cata guiada de 45 minutos. Las plazas son limitadas y cuestan 12 € por persona.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2>Reserva mesa o cuéntanos tu plan</h2>
+          <p>Escríbenos para reservas, pedidos de grupo o compra de café en grano. Te respondemos en menos de 24 horas.</p>
+
+          <ul class="contact-list">
+            <li>
+              <strong>Teléfono</strong>
+              <a href="tel:+34900123456">+34 900 123 456</a>
+            </li>
+            <li>
+              <strong>Correo</strong>
+              <a href="mailto:hola@nubedorada.example">hola@nubedorada.example</a>
+            </li>
+            <li>
+              <strong>Dirección</strong>
+              <span>Calle de los Naranjos, 42 · Villa Serena</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="formulario-contacto" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required minlength="2" aria-describedby="error-nombre">
+            <p class="error" id="error-nombre"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="error-email">
+            <p class="error" id="error-email"></p>
+          </div>
+
+          <div class="field">
+            <label for="motivo">Motivo de la consulta</label>
+            <select id="motivo" name="motivo">
+              <option value="reserva">Reservar mesa</option>
+              <option value="grupo">Evento o pedido para grupo</option>
+              <option value="cafe">Compra de café en grano</option>
+              <option value="otro">Otra consulta</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required minlength="10" aria-describedby="error-mensaje"></textarea>
+            <p class="error" id="error-mensaje"></p>
+          </div>
+
+          <div class="field">
+            <div class="check-row">
+              <input id="privacidad" name="privacidad" type="checkbox" required aria-describedby="error-privacidad">
+              <label for="privacidad">Acepto que Nube Dorada guarde mis datos para responder a esta consulta.</label>
+            </div>
+            <p class="error" id="error-privacidad"></p>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          <p class="form-status" id="estado-formulario" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.5-7.97A6 6 0 0 1 18 9a4.5 4.5 0 0 1 0 9H7z"/></svg>
+          </span>
+          <span class="brand-name">Nube Dorada</span>
+        </a>
+        <p class="footer-text">Café de especialidad tostado en pequeños lotes en Villa Serena desde 2014.</p>
+      </div>
+
+      <nav aria-label="Enlaces del pie de página">
+        <ul class="footer-links">
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#visita">Horario y ubicación</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <p class="disclaimer">Sitio de demostración. Todos los nombres, direcciones, datos, precios y opiniones son ficticios.</p>
+    </div>
+    <p class="copyright">© <span id="anio">2026</span> Nube Dorada. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
